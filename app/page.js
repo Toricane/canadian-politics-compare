@@ -130,7 +130,13 @@ export default function Home() {
 
             {/* Footer - Consider moving to layout.js if it's global */}
             <footer className={styles.footer}>
-                Built by Prajwal Prashanth
+                <p>
+                    Built by Prajwal Prashanth, inspired by Krishiv&apos;s{" "}
+                    <a href="https://nextvoters.com/" target="_blank">
+                        {" "}
+                        nextvoters.com
+                    </a>
+                </p>
             </footer>
         </main>
     );
