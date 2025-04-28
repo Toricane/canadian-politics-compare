@@ -83,6 +83,16 @@ export default function Home() {
             {/* Comparison Boxes */}
             <div className={styles.comparisonGrid}>
                 <div className={styles.partyColumn}>
+                    <h2 className={styles.partyTitleLiberal}>LIBERAL PARTY</h2>
+                    <div
+                        className={`${styles.perspectiveBox} ${styles.liberalBox}`}
+                    >
+                        <p style={{ whiteSpace: "pre-wrap" }}>
+                            {liberalPerspective}
+                        </p>
+                    </div>
+                </div>
+                <div className={styles.partyColumn}>
                     <h2 className={styles.partyTitleConservative}>
                         CONSERVATIVE PARTY
                     </h2>
@@ -92,16 +102,6 @@ export default function Home() {
                         {/* Render newlines correctly from the LLM response */}
                         <p style={{ whiteSpace: "pre-wrap" }}>
                             {conservativePerspective}
-                        </p>
-                    </div>
-                </div>
-                <div className={styles.partyColumn}>
-                    <h2 className={styles.partyTitleLiberal}>LIBERAL PARTY</h2>
-                    <div
-                        className={`${styles.perspectiveBox} ${styles.liberalBox}`}
-                    >
-                        <p style={{ whiteSpace: "pre-wrap" }}>
-                            {liberalPerspective}
                         </p>
                     </div>
                 </div>
